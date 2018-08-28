@@ -4,8 +4,10 @@ A collection of scripts to be ran with the GNOME shell extension [Argos](https:/
 
 <h3>Uptime indicator</h3>
 
-![](2dy.png)
+![](uptimeScrn.png)
 
 <h3>Network & Bandwidth monitor</h3>
+
+![](netbandmonScrn.png)
 
 [Bandwidth Monitor NG](https://github.com/vgropp/bwm-ng) is needed as a dependency for the script to run.

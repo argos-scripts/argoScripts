@@ -2,7 +2,7 @@
 
 U=$(uptime | awk '{gsub(",", "")} {print $3, $4, $5}')
 date=$(uptime -s)
-style="font='Linux Biolinum' size=11.5" # Use monospace if you don't have/like the font
+style="font='Linux Biolinum' size=11" # Use monospace if you don't have/like the font
 
 if [[ ! "$U" =~ "day" ]];then
   if [[ ! "$U" =~ ":" ]]; then
@@ -25,8 +25,12 @@ else
 fi
 
 echo "<span stretch='condensed' style='oblique' weight='ultrabold' gravity='south' gravity_hint='strong'"\
-"variant='smallcaps'>ᛊ</span><span font_stretch='ultracondensed' style='italic' weight='ultrabold'>$up</span> | $style"
+"variant='smallcaps'>⚡</span><span font_stretch='ultracondensed' style='italic' weight='ultrabold'>$up</span> | $style"
 
 echo "---"
 
 echo "<b>$date</b> | font='monospace' size=10" # "system up since" on drop down
+
+echo "---"
+
+echo "⚡⚡ | bash='gnome-terminal --full-screen -- python3 $DIR/matrix-curses.py' terminal=false" #pseudo screen saver
